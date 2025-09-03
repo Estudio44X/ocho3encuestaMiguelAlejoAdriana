@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Encuesta Colegio 🏫</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Pantalla de bienvenida -->
+  <div id="welcomeScreen" class="welcome-screen">
+    <h1 class="welcome-text">👋 Bienvenido a la encuesta de</h1>
+    <h2 class="creators">
+      Alejo Lopera ✨ | Adriana Beltrán 🌸 | Miguel Patiño 🚀
+    </h2>
+    <button onclick="startSurvey()">Comenzar 👉</button>
+  </div>
+
+  <!-- Contenedor principal oculto al inicio -->
+  <div class="container hidden fade-in" id="surveyContainer">
+    <div class="creators-side left">🌟 Alejo Lopera</div>
+    <div class="creators-side right">🌸 Adriana Beltrán & 🚀 Miguel Patiño</div>
+
+    <h1>📋 Encuesta sobre el Transporte Escolar</h1>
+    <form id="surveyForm">
+
+      <label>👤 Nombre completo:</label>
+      <input type="text" name="nombre" placeholder="Escribe tu nombre aquí..." required>
+
+      <!-- resto de las preguntas -->
+      <label>1️⃣ ¿En qué viajan ustedes para ir al colegio? 🚗</label>
+      <select name="viaje" required>
+        <option value="" disabled selected>Selecciona...</option>
+        <option value="Taxi">Taxi 🚕</option>
+        <option value="Moto">Moto 🏍️</option>
+        <option value="Carro">Carro 🚘</option>
+        <option value="Ruta">Ruta 🚌</option>
+        <option value="A pie">A pie 🚶‍♂️</option>
+      </select>
+
+      <label>2️⃣ ¿Tiempo de traslado? ⏱️</label>
+      <select name="tiempo" required>
+        <option value="" disabled selected>Selecciona...</option>
+        <option value="1 hora">1 hora ⌛</option>
+        <option value="30 minutos">30 minutos 🕧</option>
+        <option value="15 minutos">15 minutos 🕒</option>
+      </select>
+
+      <label>3️⃣ ¿Van en grupo al colegio (con amigos o solo)? 👯</label>
+      <select name="grupo" required>
+        <option value="" disabled selected>Selecciona...</option>
+        <option value="Sí">Sí ✅</option>
+        <option value="No">No ❌</option>
+      </select>
+
+      <label>4️⃣ ¿Gastan dinero en el transporte? 💰</label>
+      <select name="gasto" required>
+        <option value="" disabled selected>Selecciona...</option>
+        <option value="Sí">Sí 💵</option>
+        <option value="No">No 🚫</option>
+      </select>
+
+      <label>5️⃣ ¿Tienen que subir lomas? ⛰️</label>
+      <select name="lomas" required>
+        <option value="" disabled selected>Selecciona...</option>
+        <option value="Sí">Sí 👍</option>
+        <option value="No">No 👎</option>
+      </select>
+
+      <label>6️⃣ ¿A qué horas se levantan para ir al colegio? ⏰</label>
+      <select name="horaLevantarse" required>
+        <option value="" disabled selected>Selecciona...</option>
+        <option value="4:00 am">4:00 am 🌄</option>
+        <option value="4:30 am">4:30 am 🌅</option>
+        <option value="5:00 am">5:00 am ☀️</option>
+      </select>
+
+      <label>7️⃣ ¿Reciben tickets (para la ruta gratis)? 🎟️</label>
+      <select name="tickets" required>
+        <option value="" disabled selected>Selecciona...</option>
+        <option value="Sí">Sí ✅</option>
+        <option value="No">No ❌</option>
+      </select>
+
+      <label>8️⃣ ¿La mayoría van al transporte? 🚌</label>
+      <select name="mayoria" required>
+        <option value="" disabled selected>Selecciona...</option>
+        <option value="Sí">Sí 👍</option>
+        <option value="No">No 👎</option>
+      </select>
+
+      <label>9️⃣ ¿A qué horas pasa el transporte por la casa? 🏠</label>
+      <select name="horaTransporte" required>
+        <option value="" disabled selected>Selecciona...</option>
+        <option value="1:00 pm">1:00 pm</option>
+        <option value="1:30 pm">1:30 pm</option>
+        <option value="2:00 pm">2:00 pm</option>
+        <option value="Cada hora">Cada hora ⏳</option>
+      </select>
+
+      <label>🔟 ¿Has llegado tarde por culpa del transporte? 🕐</label>
+      <select name="tarde" required>
+        <option value="" disabled selected>Selecciona...</option>
+        <option value="Sí">Sí 😓</option>
+        <option value="No">No 😎</option>
+      </select>
+
+      <button type="submit">🚀 Enviar</button>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
