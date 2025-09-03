@@ -15,6 +15,8 @@ document.addEventListener("DOMContentLoaded", () => {
         if (result.success) {
           alert("✅ Respuesta enviada con éxito");
           form.reset();
+        } else {
+          alert("❌ Error al enviar la respuesta");
         }
       } catch (err) {
         alert("❌ Error al enviar la respuesta");
